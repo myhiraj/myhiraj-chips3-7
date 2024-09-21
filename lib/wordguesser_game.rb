@@ -7,7 +7,14 @@ class WordGuesserGame
 
   def initialize(word)
     @word = word
+    @guesses = ""
+    @wrong_guesses = ""
   end
+
+  attr_accessor :word
+  attr_accessor :guesses
+  attr_accessor :wrong_guesses
+
 
   # You can test it by installing irb via $ gem install irb
   # and then running $ irb -I. -r app.rb
